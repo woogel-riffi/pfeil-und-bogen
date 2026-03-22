@@ -10,7 +10,7 @@ const Index = () => {
       <section className="relative overflow-hidden flex items-center bg-cover bg-center w-full" style={{ backgroundImage: `url(${heroBg})`, aspectRatio: '1584/672' }}>
         <div className="container mx-auto px-6 flex flex-col items-start justify-center relative z-10 py-8">
           <div className="max-w-lg">
-            <h1 className="font-display leading-none text-foreground text-3xl sm:text-4xl md:text-6xl lg:text-8xl">
+            <h1 className="font-display leading-none text-foreground md:text-7xl text-5xl lg:text-8xl">
               NATURNAHER SPORT<br />IN RIFFERSWIL
             </h1>
           </div>
@@ -18,7 +18,7 @@ const Index = () => {
       </section>
 
       {/* Info Cards */}
-      <section className="bg-card section-padding">
+      <section className="section-padding bg-primary-foreground">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
             <InfoCard
