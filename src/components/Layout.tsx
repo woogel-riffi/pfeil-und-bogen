@@ -38,7 +38,7 @@ const Layout = ({ children }: {children: React.ReactNode;}) => {
             </div>
 
             {/* Bottom row: navigation */}
-            <div className="py-2 px-4 flex items-center justify-end text-2xl">
+            <div className="py-2 px-4 flex items-center justify-end text-3xl">
               <button
                 className="md:hidden text-cream"
                 onClick={() => setMobileOpen(!mobileOpen)}
