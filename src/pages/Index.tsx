@@ -23,17 +23,17 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-12">
             <InfoCard
               icon="target"
-              title="Starter Kurse"
+              title="KURSE UND TRAINING"
               description="Einstiegskurse für Anfänger jeden Alters. Ausrüstung wird gestellt – einfach vorbeikommen und loslegen." />
             
             <InfoCard
               icon="calendar"
-              title="Events"
+              title="AGENDA"
               description="Regelmässige Vereinsanlässe, Turniere und gesellige Abende für alle Mitglieder und Gäste." />
             
             <InfoCard
               icon="map"
-              title="Bogenplatz Infos"
+              title="UNSERE ANLAGE"
               description="Unser Bogenplatz mitten in der Natur bietet optimale Bedingungen für Indoor- und Outdoor-Training." />
             
           </div>
