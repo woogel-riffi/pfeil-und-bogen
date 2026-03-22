@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/Logo_transparent.png";
 
 const navItems = [
   { label: "Start", path: "/" },
@@ -19,37 +20,47 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Top Header */}
-      <div className="py-3 px-4" style={{ backgroundColor: '#5c9052' }}>
-        <div className="container mx-auto">
-          <Link to="/" className="font-display text-2xl md:text-3xl tracking-wide" style={{ color: '#2b2b29' }}>
-            PFEIL UND BOGEN
+      {/* Combined Header with Logo spanning both rows */}
+      <div className="relative z-50">
+        <div className="flex">
+          {/* Logo column */}
+          <Link to="/" className="flex-shrink-0 flex items-center pl-4 md:pl-8" style={{ backgroundColor: '#5c9052' }}>
+            <img src={logo} alt="Pfeil und Bogen Logo" className="h-20 md:h-24 w-auto py-1" />
           </Link>
-        </div>
-      </div>
 
-      {/* Navigation */}
-      <header className="bg-forest-dark relative z-50">
-        <div className="container mx-auto flex items-center justify-between py-2 px-4">
-          <button
-            className="md:hidden text-cream"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Menu"
-          >
-            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-          <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`nav-link ${location.pathname === item.path ? "active" : ""}`}
-              >
-                {item.label}
+          {/* Right column with title + nav */}
+          <div className="flex-1 flex flex-col">
+            {/* Top row: title */}
+            <div className="py-2 px-4 flex items-center" style={{ backgroundColor: '#5c9052' }}>
+              <Link to="/" className="font-display text-2xl md:text-3xl tracking-wide" style={{ color: '#2b2b29' }}>
+                PFEIL UND BOGEN
               </Link>
-            ))}
-          </nav>
+            </div>
+
+            {/* Bottom row: navigation */}
+            <div className="bg-forest-dark py-2 px-4 flex items-center justify-end">
+              <button
+                className="md:hidden text-cream"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="Menu"
+              >
+                {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
+              <nav className="hidden md:flex items-center gap-1">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`nav-link ${location.pathname === item.path ? "active" : ""}`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </div>
         </div>
+
         {/* Mobile nav */}
         {mobileOpen && (
           <nav className="md:hidden bg-forest-dark border-t border-border pb-4 px-4">
@@ -65,7 +76,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             ))}
           </nav>
         )}
-      </header>
+      </div>
 
       {/* Main */}
       <main className="flex-1">{children}</main>
