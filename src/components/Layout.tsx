@@ -25,7 +25,7 @@ const Layout = ({ children }: {children: React.ReactNode;}) => {
         <div className="flex" style={{ backgroundColor: '#4a773e' }}>
           {/* Logo column */}
           <Link to="/" className="flex-shrink-0 flex items-center pl-4 md:pl-8">
-            <img src={logo} alt="Pfeil und Bogen Logo" className="h-24 md:h-32 w-auto py-1" />
+            <img src={logo} alt="Pfeil und Bogen Logo" className="h-32 md:h-40 w-auto py-1" />
           </Link>
 
           {/* Right column with title + nav */}
