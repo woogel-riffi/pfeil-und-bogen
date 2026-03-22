@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden min-h-[70vh] flex items-center bg-contain bg-right bg-no-repeat bg-background" style={{ backgroundImage: `url(${heroBg})` }}>
+      <section className="relative overflow-hidden flex items-center bg-contain bg-right bg-no-repeat bg-background" style={{ backgroundImage: `url(${heroBg})`, aspectRatio: '3.5/1' }}>
         <div className="container mx-auto px-6 flex flex-col items-start justify-center relative z-10 py-16">
           <div className="max-w-xl">
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-foreground mb-6">
