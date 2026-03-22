@@ -7,14 +7,8 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden min-h-[70vh] flex items-center bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }}>
-        {/* Decorative arrows */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[20%] left-[10%] w-[80%] h-1 bg-arrow-orange rotate-[15deg] origin-left rounded-full opacity-60" />
-          <div className="absolute top-[35%] left-[5%] w-[75%] h-1 bg-arrow-yellow rotate-[20deg] origin-left rounded-full opacity-50" />
-        </div>
-
-        <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between relative z-10 py-16">
+      <section className="relative overflow-hidden min-h-[70vh] flex items-center bg-contain bg-right bg-no-repeat bg-background" style={{ backgroundImage: `url(${heroBg})` }}>
+        <div className="container mx-auto px-6 flex flex-col items-start justify-center relative z-10 py-16">
           <div className="max-w-xl">
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none text-foreground mb-6">
               NATURNAHER SPORT<br />IN RIFFERSWIL
@@ -26,7 +20,6 @@ const Index = () => {
               Jetzt starten
             </Link>
           </div>
-          <TargetGraphic className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mt-10 lg:mt-0 flex-shrink-0" />
         </div>
       </section>
 
