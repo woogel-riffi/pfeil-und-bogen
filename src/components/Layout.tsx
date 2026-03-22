@@ -4,17 +4,17 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/Logo_transparent.png";
 
 const navItems = [
-  { label: "Start", path: "/" },
-  { label: "Verein", path: "/verein" },
-  { label: "Training", path: "/training" },
-  { label: "Partyraum", path: "/partyraum" },
-  { label: "Preise", path: "/preise" },
-  { label: "Kalender", path: "/kalender" },
-  { label: "Über uns", path: "/ueber-uns" },
-  { label: "FAQ", path: "/faq" },
-];
+{ label: "Start", path: "/" },
+{ label: "Verein", path: "/verein" },
+{ label: "Training", path: "/training" },
+{ label: "Partyraum", path: "/partyraum" },
+{ label: "Preise", path: "/preise" },
+{ label: "Kalender", path: "/kalender" },
+{ label: "Über uns", path: "/ueber-uns" },
+{ label: "FAQ", path: "/faq" }];
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+
+const Layout = ({ children }: {children: React.ReactNode;}) => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -32,8 +32,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="flex-1 flex flex-col">
             {/* Top row: title */}
             <div className="py-2 px-4 flex items-center">
-              <Link to="/" className="font-display text-3xl md:text-4xl lg:text-5xl tracking-wide" style={{ color: '#2b2b29' }}>
-                Pfeil und Bogen
+              <Link to="/" className="font-display text-3xl md:text-4xl tracking-wide text-secondary-foreground font-thin lg:text-7xl text-right" style={{ color: '#2b2b29' }}>PFEIL UND BOGEN
+
               </Link>
             </div>
 
@@ -42,40 +42,40 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <button
                 className="md:hidden text-cream"
                 onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Menu"
-              >
+                aria-label="Menu">
+                
                 {mobileOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
               <nav className="hidden md:flex items-center gap-1">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`nav-link ${location.pathname === item.path ? "active" : ""}`}
-                  >
+                {navItems.map((item) =>
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`nav-link ${location.pathname === item.path ? "active" : ""}`}>
+                  
                     {item.label}
                   </Link>
-                ))}
+                )}
               </nav>
             </div>
           </div>
         </div>
 
         {/* Mobile nav */}
-        {mobileOpen && (
-          <nav className="md:hidden bg-forest-dark border-t border-border pb-4 px-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`nav-link block py-2 ${location.pathname === item.path ? "active" : ""}`}
-                onClick={() => setMobileOpen(false)}
-              >
+        {mobileOpen &&
+        <nav className="md:hidden bg-forest-dark border-t border-border pb-4 px-4">
+            {navItems.map((item) =>
+          <Link
+            key={item.path}
+            to={item.path}
+            className={`nav-link block py-2 ${location.pathname === item.path ? "active" : ""}`}
+            onClick={() => setMobileOpen(false)}>
+            
                 {item.label}
               </Link>
-            ))}
+          )}
           </nav>
-        )}
+        }
       </div>
 
       {/* Main */}
@@ -88,8 +88,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <p>Kontakt: info@pfeilundbogen.riffi.ch · 123 456 780</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Layout;
