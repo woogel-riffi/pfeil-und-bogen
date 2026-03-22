@@ -4,14 +4,14 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/Logo_transparent.png";
 
 const navItems = [
-{ label: "Start", path: "/" },
-{ label: "Verein", path: "/verein" },
-{ label: "Training", path: "/training" },
-{ label: "Partyraum", path: "/partyraum" },
-{ label: "Preise", path: "/preise" },
-{ label: "Kalender", path: "/kalender" },
-{ label: "Über uns", path: "/ueber-uns" },
-{ label: "FAQ", path: "/faq" }];
+  { label: "HOME", path: "/" },
+  { label: "Verein", path: "/verein" },
+  { label: "Training", path: "/training" },
+  { label: "Partyraum", path: "/partyraum" },
+  { label: "Preise", path: "/preise" },
+  { label: "AGENDA", path: "/kalender" },
+  { label: "Über uns", path: "/ueber-uns" },
+  { label: "FAQ", path: "/faq" }];
 
 
 const Layout = ({ children }: {children: React.ReactNode;}) => {
