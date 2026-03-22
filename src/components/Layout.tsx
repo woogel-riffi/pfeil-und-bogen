@@ -19,7 +19,7 @@ const Layout = ({ children }: {children: React.ReactNode;}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto">
       {/* Combined Header with Logo spanning both rows */}
       <div className="relative z-50">
         <div className="flex" style={{ backgroundColor: '#4a773e' }}>
