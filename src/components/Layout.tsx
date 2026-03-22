@@ -85,7 +85,7 @@ const Layout = ({ children }: {children: React.ReactNode;}) => {
       <footer className="bg-forest-dark py-6 px-6">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-cream opacity-80">
           <p>© {new Date().getFullYear()} Pfeil und Bogen Rifferswil · Bogenschiessen im Bezirk Affoltern</p>
-          <p>Kontakt: info@pfeilundbogen.riffi.ch · 123 456 780</p>
+          <p>Kontakt: info@pfeilundbogen.riffi.ch </p>
         </div>
       </footer>
     </div>);
