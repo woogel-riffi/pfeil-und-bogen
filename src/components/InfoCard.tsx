@@ -16,7 +16,7 @@ const InfoCard = ({ icon, title, description }: InfoCardProps) => {
   const Icon = icons[icon];
   return (
     <div className="flex flex-col items-center text-center gap-4">
-      <div className="w-20 h-20 rounded-full flex items-center justify-center bg-[#669b55]">
+      <div className="w-20 h-20 rounded-full flex items-center justify-center bg-[#f36e30]">
         <Icon className="w-10 h-10 text-cream" />
       </div>
       <h3 className="text-xl font-bold text-card-foreground">{title}</h3>
