@@ -83,7 +83,7 @@
   }
 
   .nav-link {
-    @apply font-bold tracking-wider text-xl uppercase px-3 py-2 transition-colors;
+    @apply font-normal tracking-wider text-xl uppercase px-3 py-2 transition-colors;
     font-family: var(--font-heading);
     color: hsl(var(--cream));
   }
