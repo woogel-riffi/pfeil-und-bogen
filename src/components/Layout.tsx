@@ -22,23 +22,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen flex flex-col">
       {/* Combined Header with Logo spanning both rows */}
       <div className="relative z-50">
-        <div className="flex">
+        <div className="flex" style={{ backgroundColor: '#4a773e' }}>
           {/* Logo column */}
-          <Link to="/" className="flex-shrink-0 flex items-center pl-4 md:pl-8" style={{ backgroundColor: '#5c9052' }}>
-            <img src={logo} alt="Pfeil und Bogen Logo" className="h-20 md:h-24 w-auto py-1" />
+          <Link to="/" className="flex-shrink-0 flex items-center pl-4 md:pl-8">
+            <img src={logo} alt="Pfeil und Bogen Logo" className="h-24 md:h-32 w-auto py-1" />
           </Link>
 
           {/* Right column with title + nav */}
           <div className="flex-1 flex flex-col">
             {/* Top row: title */}
-            <div className="py-2 px-4 flex items-center" style={{ backgroundColor: '#5c9052' }}>
-              <Link to="/" className="font-display text-2xl md:text-3xl tracking-wide" style={{ color: '#2b2b29' }}>
-                PFEIL UND BOGEN
+            <div className="py-2 px-4 flex items-center">
+              <Link to="/" className="font-display text-3xl md:text-4xl lg:text-5xl tracking-wide" style={{ color: '#2b2b29' }}>
+                Pfeil und Bogen
               </Link>
             </div>
 
             {/* Bottom row: navigation */}
-            <div className="bg-forest-dark py-2 px-4 flex items-center justify-end">
+            <div className="py-2 px-4 flex items-center justify-end">
               <button
                 className="md:hidden text-cream"
                 onClick={() => setMobileOpen(!mobileOpen)}
