@@ -1,12 +1,13 @@
 import TargetGraphic from "@/components/TargetGraphic";
 import InfoCard from "@/components/InfoCard";
 import { Link } from "react-router-dom";
+import heroBg from "@/assets/p_b_hero_bg.jpg";
 
 const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-background relative overflow-hidden min-h-[70vh] flex items-center">
+      <section className="relative overflow-hidden min-h-[70vh] flex items-center bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }}>
         {/* Decorative arrows */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-[20%] left-[10%] w-[80%] h-1 bg-arrow-orange rotate-[15deg] origin-left rounded-full opacity-60" />
