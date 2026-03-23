@@ -43,7 +43,7 @@ const Index = () => {
       </section>
 
       {/* Neuigkeiten */}
-      <section className="bg-background section-padding">
+      <section className="section-padding bg-[#36aba9]">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-8">Neuigkeiten</h2>
           <div className="grid md:grid-cols-2 gap-8">
