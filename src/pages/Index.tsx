@@ -11,7 +11,7 @@ const Index = () => {
       <section className="relative overflow-hidden flex items-center bg-cover bg-center w-full" style={{ backgroundImage: `url(${heroBg})`, aspectRatio: '1584/672' }}>
         <div className="container mx-auto px-6 flex flex-col items-start justify-center relative z-10 py-8">
           <div className="max-w-lg">
-            <h1 className="font-display leading-none md:text-7xl text-5xl lg:text-8xl text-primary-foreground">
+            <h1 className="font-display leading-none md:text-7xl text-5xl lg:text-8xl text-[#faf7f0]">
               NATURNAHER SPORT<br />IN RIFFERSWIL
             </h1>
           </div>
