@@ -10,19 +10,24 @@ interface InfoCardProps {
   icon: keyof typeof icons;
   title: string;
   description: string;
+  customIcon?: string;
 }
 
-const InfoCard = ({ icon, title, description }: InfoCardProps) => {
+const InfoCard = ({ icon, title, description, customIcon }: InfoCardProps) => {
   const Icon = icons[icon];
   return (
     <div className="flex flex-col items-center text-center gap-4">
-      <div className="w-20 h-20 rounded-full flex items-center justify-center bg-[#f36e30]">
-        <Icon className="w-10 h-10 text-cream" />
-      </div>
+      {customIcon ? (
+        <img src={customIcon} alt={title} className="w-20 h-20 rounded-full object-cover" />
+      ) : (
+        <div className="w-20 h-20 rounded-full flex items-center justify-center bg-[#f36e30]">
+          <Icon className="w-10 h-10 text-cream" />
+        </div>
+      )}
       <h3 className="text-xl font-bold text-card-foreground">{title}</h3>
       <p className="text-card-foreground/70 max-w-xs">{description}</p>
-    </div>);
-
+    </div>
+  );
 };
 
 export default InfoCard;
