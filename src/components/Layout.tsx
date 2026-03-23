@@ -5,7 +5,7 @@ import logo from "@/assets/Logo_transparent.png";
 
 const navItems = [
   { label: "HOME", path: "/" },
-  { label: "Verein", path: "/verein" },
+  { label: "ANLAGE", path: "/verein" },
   { label: "Training", path: "/training" },
   { label: "Partyraum", path: "/partyraum" },
   { label: "Preise", path: "/preise" },
