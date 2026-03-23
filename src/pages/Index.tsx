@@ -30,6 +30,7 @@ const Index = () => {
             <InfoCard
               icon="calendar"
               title="AGENDA"
+              customIcon={iconAgenda}
               description="Regelmässige Vereinsanlässe, Turniere und gesellige Abende für alle Mitglieder und Gäste." />
             
             <InfoCard
