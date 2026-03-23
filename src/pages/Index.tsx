@@ -2,6 +2,7 @@ import TargetGraphic from "@/components/TargetGraphic";
 import InfoCard from "@/components/InfoCard";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/p_b_hero_bg.jpg";
+import iconAgenda from "@/assets/icon_agenda.png";
 
 const Index = () => {
   return (
@@ -29,6 +30,7 @@ const Index = () => {
             <InfoCard
               icon="calendar"
               title="AGENDA"
+              customIcon={iconAgenda}
               description="Regelmässige Vereinsanlässe, Turniere und gesellige Abende für alle Mitglieder und Gäste." />
             
             <InfoCard
