@@ -85,7 +85,7 @@
   .nav-link {
     @apply font-normal tracking-wider text-xl uppercase px-3 py-2 transition-colors;
     font-family: var(--font-heading);
-    color: hsl(var(--cream));
+    color: #faf7f0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
 
