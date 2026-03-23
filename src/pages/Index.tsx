@@ -19,7 +19,7 @@ const Index = () => {
       </section>
 
       {/* Info Cards */}
-      <section className="section-padding bg-primary-foreground">
+      <section className="section-padding bg-[#faf7f0]">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-12">
             <InfoCard
